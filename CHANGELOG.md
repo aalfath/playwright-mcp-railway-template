@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-19: Playwright MCP v0.0.86
+
+- No breaking changes. The server keeps no data between deploys; your `MCP_API_TOKEN` and the gateway are unchanged.
+- Playwright MCP [v0.0.86](https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.86): browser-extension sessions can be named and colored, tab groups can be resumed, and browser-wide changes from extension clients are refused. Neither affects this headless server setup.
+- Image: `mcr.microsoft.com/playwright/mcp:v0.0.86@sha256:2dfc17e08e8db54678ec965ce9ffb4100be0aa68135774d761bac9035ceb6668`.
+
 ## 2026-11-16: Playwright MCP v0.0.85, built from this repository
 
 - The template now builds both services from this repository instead of running images directly, so deployers get update notices from Railway.

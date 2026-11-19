@@ -9,7 +9,7 @@ Railway template for [Playwright MCP](https://github.com/microsoft/playwright-mc
 | Service | Folder | Base image | Networking |
 | --- | --- | --- | --- |
 | `gateway` | [`gateway/`](gateway) | `caddy:2.11.9-alpine` (pinned by digest) | public domain, port 8080, health check `/healthz` |
-| `playwright` | [`playwright/`](playwright) | `mcr.microsoft.com/playwright/mcp:v0.0.85` (pinned by digest) | private network only, port 8931 |
+| `playwright` | [`playwright/`](playwright) | `mcr.microsoft.com/playwright/mcp:v0.0.86` (pinned by digest) | private network only, port 8931 |
 
 Both services build from this repository (root directories `/gateway` and `/playwright`). Nothing is stored on disk: each MCP session gets an isolated in-memory browser profile, and snapshot or screenshot files go to `/tmp/playwright-mcp` (capped at 100 MB).
 

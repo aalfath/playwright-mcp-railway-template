@@ -1,6 +1,6 @@
 # Playwright MCP (Microsoft), headless Chromium, private service.
 # Pinned by version and multi-arch index digest. Bump both together.
-FROM mcr.microsoft.com/playwright/mcp:v0.0.85@sha256:cc70a6922ff856f3aba0fe97d0d94220dc9a7f367f6d332facc6d81d9a91e60e
+FROM mcr.microsoft.com/playwright/mcp:v0.0.86@sha256:2dfc17e08e8db54678ec965ce9ffb4100be0aa68135774d761bac9035ceb6668
 
 COPY --chmod=0755 start.sh /usr/local/bin/start-playwright-mcp
 
